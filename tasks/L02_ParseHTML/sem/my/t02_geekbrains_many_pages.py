@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from pprint import pprint
+import json
 
 # from fake_useragent import UserAgent
 
@@ -47,3 +48,7 @@ while True:
 
 pprint(all_posts)
 pprint(len(all_posts))
+
+# сохранение данных в JSON-файл
+with open('geekbrains_data.json', 'w') as f:
+    json.dump(all_posts, f, indent=2)
