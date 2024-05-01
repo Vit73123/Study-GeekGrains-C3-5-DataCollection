@@ -9,7 +9,7 @@ collection = db["games"]
 
 fs = gridfs.GridFS(db)
  
-file_data =  open('steam_games.json', 'rb')
+file_data =  open('data\\steam_games.json', 'rb')
     
 data = file_data.read()
-fs.put(file_data, filename='steam_games.json')
+fs.put(file_data, filename='data\\steam_games.json')

@@ -7,7 +7,7 @@ db = client["steam"]
 
 collection = db["games"]
  
-with open('steam_games.json') as file:
+with open('data\\steam_games.json') as file:
     file_data = json.load(file)
      
 collection.insert_one(file_data) 
