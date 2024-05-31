@@ -1,0 +1,9 @@
+product_id,region,month,sales_quantity
+0,1,North,Jan,10
+1,2,North,Jan,20
+2,1,South,Jan,15
+3,2,South,Jan,25
+4,1,North,Feb,12
+5,2,North,Feb,22
+6,1,South,Feb,18
+7,2,South,Feb,28
