@@ -1,0 +1,138 @@
+ 0   Id             2919 non-null   int64  
+ 1   MSSubClass     2919 non-null   int64      К   LE Identifies the type of dwelling involved in the sale  
+ 2   MSZoning       2915 non-null   object     К   LE MSZoning: Identifies the general zoning classification of the sale  
+ 3   LotFrontage    2433 non-null   float64  П        Linear feet of street connected to property  
+ 4   LotArea        2919 non-null   int64             Lot size in square feet  
+ 5   Street         2919 non-null   object     К   OH Type of road access to property  
+ 6   Alley          198 non-null    object   П К   OH Type of alley access to property  
+ 7   LotShape       2919 non-null   object     К   OH General shape of property  
+ 8   LandContour    2919 non-null   object     К   OH Flatness of the property  
+ 9   Utilities      2917 non-null   object   П К   OH Type of utilities available  
+ 10  LotConfig      2919 non-null   object     К   OH Lot configuration  
+ 11  LandSlope      2919 non-null   object     К   OH Slope of property  
+ 12  Neighborhood   2919 non-null   object     К   LE Physical locations within Ames city limits  
+ 13  Condition1     2919 non-null   object     К   LE Proximity to various conditions  
+ 14  Condition2     2919 non-null   object     К   LE Proximity to various conditions (if more than one is present)  
+ 15  BldgType       2919 non-null   object     К   LE Type of dwelling  
+ 16  HouseStyle     2919 non-null   object     К   LE Style of dwelling  
+ 17  OverallQual    2919 non-null   int64        Р LE Rates the overall material and finish of the house  
+ 18  OverallCond    2919 non-null   int64        Р LE Rates the overall condition of the house  
+ 19  YearBuilt      2919 non-null   int64             Original construction date  
+ 20  YearRemodAdd   2919 non-null   int64             Remodel date (same as construction date if no remodeling or additions)  
+ 21  RoofStyle      2919 non-null   object     К   LE Type of roof  
+ 22  RoofMatl       2919 non-null   object     К   LE Roof material  
+ 23  Exterior1st    2918 non-null   object   П К   LE Exterior covering on house  
+ 24  Exterior2nd    2918 non-null   object   П К   LE Exterior covering on house (if more than one material)  
+ 25  MasVnrType     1153 non-null   object   П К   LE Masonry veneer type  
+ 26  MasVnrArea     2896 non-null   float64  П        Masonry veneer area in square feet  
+ 27  ExterQual      2919 non-null   object     К   LE Evaluates the quality of the material on the exterior  
+ 28  ExterCond      2919 non-null   object     К   LE Evaluates the present condition of the material on the exterior  
+ 29  Foundation     2919 non-null   object     К   LE Type of foundation  
+ 30  BsmtQual       2838 non-null   object   П К   LE Evaluates the height of the basement  
+ 31  BsmtCond       2837 non-null   object   П К   LE Evaluates the general condition of the basement  
+ 32  BsmtExposure   2837 non-null   object   П К   LE Refers to walkout or garden level walls  
+ 33  BsmtFinType1   2840 non-null   object   П К   LE Rating of basement finished area  
+ 34  BsmtFinSF1     2918 non-null   float64  П        Type 1 finished square feet  
+ 35  BsmtFinType2   2839 non-null   object   П   Р LE Rating of basement finished area (if multiple types)  
+ 36  BsmtFinSF2     2918 non-null   float64  П        Type 2 finished square feet  
+ 37  BsmtUnfSF      2918 non-null   float64  П        Unfinished square feet of basement area  
+ 38  TotalBsmtSF    2918 non-null   float64  П        Total square feet of basement area  
+ 39  Heating        2919 non-null   object     К   LE Type of heating  
+ 40  HeatingQC      2919 non-null   object       Р LE Heating quality and condition  
+ 41  CentralAir     2919 non-null   object     К   OH Central air conditioning  
+ 42  Electrical     2918 non-null   object   П К   LE Electrical system  
+ 43  1stFlrSF       2919 non-null   int64             First Floor square feet  
+ 44  2ndFlrSF       2919 non-null   int64             Second floor square feet  
+ 45  LowQualFinSF   2919 non-null   int64             Low quality finished square feet (all floors)  
+ 46  GrLivArea      2919 non-null   int64             Above grade (ground) living area square feet  
+ 47  BsmtFullBath   2917 non-null   float64  П        Basement full bathrooms  
+ 48  BsmtHalfBath   2917 non-null   float64  П        Basement half bathrooms  
+ 49  FullBath       2919 non-null   int64             Full bathrooms above grade  
+ 50  HalfBath       2919 non-null   int64             Half baths above grade  
+ 51  BedroomAbvGr   2919 non-null   int64             Bedrooms above grade (does NOT include basement bedrooms)  
+ 52  KitchenAbvGr   2919 non-null   int64             Kitchens above grade  
+ 53  KitchenQual    2918 non-null   object     К   LE Kitchen quality  
+ 54  TotRmsAbvGrd   2919 non-null   int64             Total rooms above grade (does not include bathrooms)  
+ 55  Functional     2917 non-null   object   П К   LE Home functionality (Assume typical unless deductions are warranted)  
+ 56  Fireplaces     2919 non-null   int64             Number of fireplaces  
+ 57  FireplaceQu    1499 non-null   object   П   Р LE Fireplace quality  
+ 58  GarageType     2762 non-null   object   П К   LE Garage location
+ 59  GarageYrBlt    2760 non-null   float64  П        Year garage was built
+ 60  GarageFinish   2760 non-null   object   П К   LE Interior finish of the garage
+ 61  GarageCars     2918 non-null   float64  П        Size of garage in car capacity
+ 62  GarageArea     2918 non-null   float64  П        Size of garage in square feet
+ 63  GarageQual     2760 non-null   object   П   Р LE Garage quality
+ 64  GarageCond     2760 non-null   object   П   Р LE Garage condition
+ 65  PavedDrive     2919 non-null   object     К   LE Paved driveway
+ 66  WoodDeckSF     2919 non-null   int64             Wood deck area in square feet
+ 67  OpenPorchSF    2919 non-null   int64             Open porch area in square feet
+ 68  EnclosedPorch  2919 non-null   int64             Enclosed porch area in square feet
+ 69  3SsnPorch      2919 non-null   int64             Three season porch area in square feet
+ 70  ScreenPorch    2919 non-null   int64             Screen porch area in square feet
+ 71  PoolArea       2919 non-null   int64             Pool area in square feet
+ 72  PoolQC         10 non-null     object   П   Р LE Pool quality
+ 73  Fence          571 non-null    object   П   Р LE Fence quality
+ 74  MiscFeature    105 non-null    object   П К   LE Miscellaneous feature not covered in other categories
+ 75  MiscVal        2919 non-null   int64             $Value of miscellaneous feature
+ 76  MoSold         2919 non-null   int64             Month Sold (MM)
+ 77  YrSold         2919 non-null   int64             Year Sold (YYYY)
+ 78  SaleType       2918 non-null   object   П К   LE Type of sale
+ 79  SaleCondition  2919 non-null   object     К   LE Condition of sale
+ 80  SalePrice      1460 non-null   float64
+ 
+Удалить строки с единичными пропущенными данными:
+
+ 9   Utilities      2917 non-null   object 
+ 23  Exterior1st    2918 non-null   object 
+ 24  Exterior2nd    2918 non-null   object 
+ 34  BsmtFinSF1     2918 non-null   float64
+ 36  BsmtFinSF2     2918 non-null   float64
+ 37  BsmtUnfSF      2918 non-null   float64
+ 38  TotalBsmtSF    2918 non-null   float64
+ 42  Electrical     2918 non-null   object 
+ 47  BsmtFullBath   2917 non-null   float64
+ 48  BsmtHalfBath   2917 non-null   float64
+ 53  KitchenQual    2918 non-null   object 
+ 55  Functional     2917 non-null   object 
+ 61  GarageCars     2918 non-null   float64
+ 62  GarageArea     2918 non-null   float64
+ 78  SaleType       2918 non-null   object 
+ 79  SaleCondition  2919 non-null   object 
+
+['Utilities', 'Exterior1st', 'Exterior2nd', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', , 'TotalBsmtSF', 'Electrical', 'BsmtFullBath', 'BsmtHalfBath', 'KitchenQual', 'Functional', 'GarageCars', 'GarageArea', 'SaleType', 'SaleCondition']
+
+Заполнить медианой числовые (некотегориальные) данные, не имеющие их "родительских" признаков в датасете:
+ 
+ 3   LotFrontage    2433 non-null   float64  П     Linear feet of street connected to property  
+
+ 26  MasVnrArea     2896 non-null   float64  П     Masonry veneer area in square feet  
+
+Заполнить модой нечисловые (категориальные, ранжируемые) данные, не имеющие их "родительских" признаков в датасете:
+
+
+Признаки, значения которых Null имеют смысловую нагрузку:
+Оставить пропущенные данные None (Null):
+
+ 6   Alley          198 non-null    object   П К   Type of alley access to property   (Отсутствие)
+
+ 25  MasVnrType     1153 non-null   object   П К   Masonry veneer type  
+
+ 30  BsmtQual       2838 non-null   object   П К   Evaluates the height of the basement  
+ 31  BsmtCond       2837 non-null   object   П К   Evaluates the general condition of the basement  
+ 32  BsmtExposure   2837 non-null   object   П К   Refers to walkout or garden level walls  
+ 33  BsmtFinType1   2840 non-null   object   П К   Rating of basement finished area  
+ 
+ 35  BsmtFinType2   2839 non-null   object   П   Р Rating of basement finished area (if multiple types)  
+ 
+ 57  FireplaceQu    1499 non-null   object   П   Р Fireplace quality  
+ 
+ 58  GarageType     2762 non-null   object   П К   Garage location
+ 59  GarageYrBlt    2760 non-null   float64  П     Year garage was built
+ 60  GarageFinish   2760 non-null   object   П К   Interior finish of the garage
+ 63  GarageQual     2760 non-null   object   П   Р Garage quality
+ 64  GarageCond     2760 non-null   object   П   Р Garage condition
+ 
+ 72  PoolQC         10 non-null     object   П   Р Pool quality
+ 73  Fence          571 non-null    object   П   Р Fence quality
+ 74  MiscFeature    105 non-null    object   П К   Miscellaneous feature not covered in other categories
+ 
